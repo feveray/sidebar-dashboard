@@ -1,6 +1,5 @@
 
 
-
 const expand_btn = document.querySelector(".expand-btn");
 
 let activeIndex;
@@ -37,4 +36,3 @@ const searchInput = document.querySelector(".search__wrapper input");
 searchInput.addEventListener("focus", (e) => {
   document.body.classList.remove("collapsed");
 });
-

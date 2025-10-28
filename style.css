@@ -42,11 +42,11 @@ html {
 }
 
 .sidebar {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   min-height: 50rem;
-  height: 100%;
+  height: 100vh;
   padding: 1.5rem 1rem;
   border-radius: 0.5rem;
   max-width: 18rem;
@@ -69,6 +69,10 @@ body.collapsed .sidebar {
 body.collapsed .hide {
   position: absolute;
   visibility: hidden;
+}
+
+body.collapsed .content {
+  margin-left: 5rem; 
 }
 
 /*? separator */
@@ -393,4 +397,12 @@ input::placeholder {
     opacity: 1;
     width: 100%;
   }
+}
+
+/* conteúdo fica abaixo (sem deslocar) */
+.content {
+  position: relative;
+  z-index: 0;
+  padding: 24px;
+  margin-left: 18rem;
 }
